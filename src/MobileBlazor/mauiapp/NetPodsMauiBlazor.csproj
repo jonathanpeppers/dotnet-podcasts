@@ -1,14 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows')) and '$(MSBuildRuntimeType)' == 'Full'">$(TargetFrameworks);net6.0-windows10.0.19041</TargetFrameworks>
+		<TargetFramework>net6.0-android</TargetFramework>
 		<OutputType>Exe</OutputType>
 		<RootNamespace>NetPodsMauiBlazor</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
-		<MauiVersion>$(MauiV)</MauiVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<!-- Display name -->
 		<ApplicationTitle>.NET Pods Blazor</ApplicationTitle>
