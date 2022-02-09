@@ -23,6 +23,16 @@ public static class MauiProgram
                 fonts.AddFont("Segoe-Ui-Semilight.ttf", "SegoeUiSemilight");
             });
 
+        builder.Services.AddTransient<CategoriesPage>();
+        builder.Services.AddTransient<CategoryPage>();
+        builder.Services.AddTransient<DiscoverPage>();
+        builder.Services.AddTransient<EpisodeDetailPage>();
+        builder.Services.AddTransient<ListenLaterPage>();
+        builder.Services.AddTransient<ListenTogetherPage>();
+        builder.Services.AddTransient<SettingsPage>();
+        builder.Services.AddTransient<ShowDetailPage>();
+        builder.Services.AddTransient<SubscriptionsPage>();
+
         Barrel.ApplicationId = "dotnetpodcasts";
 
         return builder.Build();
